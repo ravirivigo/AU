@@ -1,1 +1,36 @@
-OK
+import java.util.*;
+import java.lang.*;
+        public class reverse_String {
+            static String reverse;
+    static String ori;
+    static String o;
+    public reverse_String(String o){
+
+
+
+    }
+    public static String Reverse(String t){
+
+        t = ori;
+     if (t.equals(null)){
+         System.out.println("Please write a string");
+     }
+     else{
+         System.out.println("Your string is" + ori);
+         reverse="";
+         for(int i=0; i<t.length(); i++){
+
+             char x = t.charAt(i);
+             reverse = reverse+x;
+
+         }
+     }
+    return(reverse);
+    }
+    public static void main(String []args){
+        Scanner sr = new Scanner(System.in);
+        o = sr.nextLine();
+        ori = o;
+        System.out.println(Reverse(ori));
+    }
+}
